@@ -61,9 +61,9 @@ const Navbar = () => {
               <a href="/" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Home</a>
               <a href="/Team" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Team</a>
               <a href="/Gallery" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Gallery</a>
-              <a href="/Projects" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Projects</a>
-              <a href="/Volanteer" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Become Volunteer</a>
-              <a href="/Help" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Help Us</a>
+              <a href="/Services" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Services</a>
+              {/* <a href="/Volanteer" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Become Volunteer</a> */}
+              <a href="/Help" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">About Us</a>
               <a href="/Contact" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Contact Us</a>
             </div>
           </div>
@@ -72,14 +72,14 @@ const Navbar = () => {
         
 
         {/* Navigation links for larger screens */}
-        <div className="hidden md:flex space-x-9 m-5">
+        <div className="hidden md:flex space-x-9 justify-items-center mr-80">
           {/* Links */}
           <a href="/" className="hover:underline hover:underline-offset-8 active:bg-pink-600 hover:text-pink-500 cursor-pointer font-normal">Home</a>
             <Link to ="/Team" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Team</Link>
             <Link to ="/Gallery" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Gallery</Link>
-            <Link to ="/Projects" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Projects</Link>
-            <Link to ="/Volanteer" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Become Volunteer</Link>
-            <Link  to="/Help" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Help Us</Link>
+            <Link to ="/Services" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Services</Link>
+            {/* <Link to ="/Volanteer" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Become Volunteer</Link> */}
+            <Link  to="/Help" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">About Us</Link>
             <Link to="/Contact" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Contact Us</Link>
         </div>
       </div>

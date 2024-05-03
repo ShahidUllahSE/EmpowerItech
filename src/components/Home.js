@@ -2,12 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import islamia2 from "../assets/islamia2.jpg";
 import img1 from "../assets/image1.jpg";
 import img2 from "../assets/image2.jpg";
-
-
-
+import eit2 from "../assets/eit2.jpg";
+import bgtech from '../assets/bgtech.jpg';
 // import homeBanner from "./assets/homeBanner.png";
 // import empW from "./assets/empW.jpg";
-
 
 const Home = () => {
   const [rendered, setRendered] = useState(false);
@@ -72,7 +70,6 @@ const Home = () => {
     // If not yet rendered, return null or a loading message
     return <p>Loading...</p>;
   }
-
 
   return (
     <div
@@ -164,45 +161,35 @@ const Home = () => {
         ></button>
       </div>
 
-
       <div>
         <div className="slider mt-4 flex-col-reverse md:flex-row bg-white">
-          <div className="left flex flex-col  items-center md:items-baseline py-12 space-y-5">
-            <h1 className="text-2xl px-3 font-medium md:text-4xl md:text-left text-pink-600 ">
-              About Us
-            </h1>
-            <p className=" text-lg text-justify mr-4 px-4 md:text-xl">
-              The EmpowerHer Organization works to improve Pakistani women's
-              lives in a constructive manner. In an effort to stop
-              discriminatory behaviors, we fight for justice and gender
-              equality. We empower women by educating them about their legal
-              rights and safeguards through educational programs. We actively
-              collaborate with local communities to solve the unique
-              difficulties encountered by women through our community outreach
-              activities. Programs for vocational training give women real-world
-              skills that improve their employability and financial security.
-              Initiatives to support women entrepreneurs help them launch and
-              expand their own companies, resulting in economic empowerment.
-              Since we know how important legal assistance is, we provide legal
-              aid services to women who are dealing with difficulties or
-              injustices. By addressing complex issues, this all-encompassing
-              strategy seeks to build a more just and equal society for women in
-              Pakistan. The organization's commitment is reflected in a holistic
-              strategy that combines advocacy, education, vocational training,
-              entrepreneurship, and legal support, empowering women to lead
-              fulfilling lives and contribute meaningfully to their communities.
-            </p>
+          <div className="flex flex-col items-center md:flex-row justify-center md:justify-start py-12 space-y-5">
+            <div className="md:w-2/4">
+              <h1 className="text-2xl px-3 font-medium md:text-4xl text-blue-600">
+                About EIT
+              </h1>
+              <p className="text-lg text-justify mr-4 px-4 py-4 md:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                dolorem commodi repudiandae saepe magnam natus aspernatur enim
+                omnis praesentium ut, iure ipsam harum impedit ducimus placeat,
+                earum aliquid maiores rem! Et explicabo ea dolores deserunt
+                ratione architecto. Sapiente minima praesentium quisquam
+                incidunt culpa. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Culpa impedit maxime dolor, ullam sunt at id
+                dolores cumque, tenetur qui veniam molestias ut eveniet? Autem
+                dolores nobis obcaecati, error aspernatur saepe odit,
+                architecto, veniam similique sequi nihil asperiores earum fugiat
+                sit excepturi?
+              </p>
+            </div>
+            <img className="w-96" src={eit2} alt="" />
           </div>
-          {/* <div className="right">
-            <img className=" flex w-full h-auto" src={empW} alt="" />
-          </div> */}
         </div>
-
-        <div className="slider mt-4 flex-col-reverse md:flex-row bg-white">
-          <div className="left flex flex-col  items-center md:items-baseline py-12  space-y-5">
-            <h1 className="text-2xl px-3 font-medium md:text-4xl md:text-left text-pink-600 ">
-              Challenges Faced By Women
-            </h1>
+          
+          <div>           
+            <div>
+              <img src={bgtech} alt=" " className="w-full h-full object-cover" />
+            </div>
             <p className="text-lg mr-4 text-justify px-4 md:text-xl">
               Pakistan, being a third-world country with a deeply entrenched
               conservative and patriarchal society, women often find themselves
@@ -216,10 +203,8 @@ const Home = () => {
               persistent challenges, and the broader societal framework
               continues to perpetuate a misogynistic environment.
             </p>
-          </div>
-          {/* <div className="right">
-            <img className=" flex w-full h-96" src={women2} alt=""/>
-        </div> */}
+          
+          
         </div>
 
         <div className="slider mt-4 flex-col-reverse md:flex-row bg-white">
@@ -280,15 +265,9 @@ const Home = () => {
             </p>
           </div>
         </div>
-
-        
-    </div>
-
+      </div>
     </div>
   );
-
-
-
 };
 
 export default Home;

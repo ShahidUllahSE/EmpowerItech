@@ -9,7 +9,7 @@ import Home from './components/Home';
 // import Projects from './components/Projects';
 // import Help from './components/Help';
 // import Volanteer from './components/Volanteer';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 // import Team from './components/Team';
 
 const InitialRouteSetter = () => {
@@ -42,7 +42,7 @@ function App() {
           <Route path="/Help" element={<Help />} />
           <Route path="/Volanteer" element={<Volanteer />} /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
       <NotificationContainer />
     </>

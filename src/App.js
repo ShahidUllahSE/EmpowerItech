@@ -5,6 +5,7 @@ import { NotificationContainer } from 'react-notifications';
 import Navbar from './components/Navbar';
 // import Gallery from './components/Gallery';
 import Home from './components/Home';
+import Services from './components/Services';
 // import Contact from './components/Contact';
 // import Projects from './components/Projects';
 // import Help from './components/Help';
@@ -35,6 +36,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Services" element={<Services />} />
+
           {/* <Route path="/Team" element={<Team />} />
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Contact" element={<Contact />} />

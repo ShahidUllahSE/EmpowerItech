@@ -71,7 +71,7 @@ const Navbar = () => {
 
         
 
-        {/* Navigation links for larger screens */}
+        {/* Navigation links for larger screenss */}
         <div className="hidden md:flex space-x-9 justify-items-center mr-80">
           {/* Links */}
           <a href="/" className="hover:underline hover:underline-offset-8 active:bg-pink-600 hover:text-pink-500 cursor-pointer font-normal">Home</a>

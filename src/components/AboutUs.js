@@ -8,7 +8,6 @@ function AboutUs() {
         Allied SKills 
       </h1>
       <hr />
-      {/* About Project Section */}
       <div className="flex flex-col items-center md:items-baseline mt-4  bg-white p-4 md:p-6 lg:p-8">
         <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl  text-blue-600 mb-5">
           About Allied Skills
@@ -73,11 +72,7 @@ function AboutUs() {
         <p className="text-base text-justify sm:text-lg">
         •	Expertise and Experience: Our team comprises industry veterans who bring a wealth of knowledge and real-world experience to the table. We understand the challenges and opportunities in the freelancing and digital marketing landscape and are committed to guiding you through them.
          <br />
-            
-          
-        
-        
-            
+      
             •	Personalized Approach: We believe in a personalized approach to learning and development. Our services and training programs are tailored to meet your specific needs and goals, ensuring you get the most out of your experience with us. <br />
             •	Community and Support: When you join our academy, you become part of a supportive community. We are here to provide ongoing guidance, answer your questions, and celebrate your successes.
             <br />

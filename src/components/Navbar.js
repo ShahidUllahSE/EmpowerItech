@@ -63,8 +63,7 @@ const Navbar = () => {
               <a href="/Team" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-semibold">Team</a>
               <a href="/Gallery" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-semibold">Gallery</a>
               <a href="/Services" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-semibold">Services</a>
-              {/* <a href="/Volanteer" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Become Volunteer</a> */}
-              <a href="/Help" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-semibold">About Us</a>
+              <a href="/AboutUs" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-semibold">About Us</a>
               <a href="/Contact" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-semibold">Contact Us</a>
             </div>
           </div>
@@ -79,7 +78,6 @@ const Navbar = () => {
             <Link to ="/Team" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-normal">Team</Link>
             <Link to ="/Gallery" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-normal">Gallery</Link>
             <Link to ="/Services" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-normal">Services</Link>
-            {/* <Link to ="/Volanteer" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Become Volunteer</Link> */}
             <Link  to="/AboutUs" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-normal">About Us</Link>
             <Link to="/Contact" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-normal">Contact Us</Link>
         </div>

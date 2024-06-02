@@ -3,18 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { NotificationContainer } from 'react-notifications';
 import Navbar from './components/Navbar';
-// import Gallery from './components/Gallery';
+import Gallary from './components/Gallary';
 import Home from './components/Home';
-// import Contact from './components/Contact';
-// import Projects from './components/Projects';
-// import Help from './components/Help';
-
+import Services from './components/Services';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
-// import Team from './components/Team';
-import Services from './components/Services';
-import Gallary from './components/Gallary';
-import Contact from './components/Contact';
 
 const InitialRouteSetter = () => {
   const navigate = useNavigate();
@@ -22,7 +16,6 @@ const InitialRouteSetter = () => {
 
   useEffect(() => {
     if (!isInitialRouteSet) {
-      // Set the initial route to '/' only once when the component mounts
       navigate('/');
       setIsInitialRouteSet(true);
     }
@@ -40,13 +33,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Gallery" element={<Gallary />} />
+          <Route path="/Contact" element={<Contact />} />
 
-          {/* <Route path="/Team" element={<Team />} />
-          <Route path="/Projects" element={<Projects />} />
-          
-          */}
+         
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
       <NotificationContainer />
     </>

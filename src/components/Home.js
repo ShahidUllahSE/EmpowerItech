@@ -245,7 +245,7 @@ In essence, our mission is to turn your dreams into reality by providing you wit
                 <p className="mb-6 text-neutral-600">
                 Our experts will help you create standout profiles and optimize your gigs to attract more clients. From writing compelling descriptions to selecting the right keywords, we ensure your profile gets noticed. 
                 </p>
-                <p className="text-neutral-500 dark:text-neutral-300">
+                <p className="text-neutral-600 ">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quae nulla saepe rerum aspernatur odio amet perferendis
                   tempora mollitia? Ratione unde magni omnis quaerat blanditiis
@@ -295,7 +295,7 @@ In essence, our mission is to turn your dreams into reality by providing you wit
                   Published <u>12.01.2022</u> by
                   <a href="#!">Anna Doe</a>
                 </p>
-                <p className="text-neutral-500 dark:text-neutral-300">
+                <p className="text-neutral-600">
                   Duis sagittis, turpis in ullamcorper venenatis, ligula nibh
                   porta dui, sit amet rutrum enim massa in ante. Curabitur in
                   justo at lorem laoreet ultricies. Nunc ligula felis, sagittis
@@ -349,11 +349,11 @@ In essence, our mission is to turn your dreams into reality by providing you wit
                   </svg>
                   Business
                 </div>
-                <p className="mb-6 text-sm text-neutral-500 dark:text-neutral-400">
+                <p className="mb-6 text-sm text-neutral-500 ">
                   Published <u>10.01.2022</u> by
                   <a href="#!">Joe Svan</a>
                 </p>
-                <p className="text-neutral-500 dark:text-neutral-300">
+                <p className="text-neutral-600">
                   Sed sollicitudin purus sed nulla dignissim ullamcorper. Aenean
                   tincidunt vulputate libero, nec imperdiet sapien pulvinar id.
                   Nullam scelerisque odio vel lacus faucibus, tincidunt feugiat

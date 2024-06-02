@@ -9,8 +9,9 @@ import Services from './components/Services';
 // import Contact from './components/Contact';
 // import Projects from './components/Projects';
 // import Help from './components/Help';
-// import Volanteer from './components/Volanteer';
+
 import Footer from './components/Footer';
+import AboutUs from './components/AboutUs';
 // import Team from './components/Team';
 
 const InitialRouteSetter = () => {
@@ -37,13 +38,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
 
           {/* <Route path="/Team" element={<Team />} />
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Projects" element={<Projects />} />
-          <Route path="/Help" element={<Help />} />
-          <Route path="/Volanteer" element={<Volanteer />} /> */}
+          
+          */}
         </Routes>
         <Footer />
       </Router>

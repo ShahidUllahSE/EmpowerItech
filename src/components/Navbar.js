@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../assets/logo.jpg"
+import Logo from "../assets/logo.jpg";
+import logolatest from "../assets/logolatest.jpg"
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -25,38 +26,38 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container mx-auto bg-white">
+    <div className="container max-w-full bg-slate-800 text-white">
       <div className="navbar flex justify-between items-center p-2">
         {/* Logo */}
         <div className="logo flex align-baseline">
-          <img src={Logo} alt="Logo" className="w-20 h-20 -mt-3" />
+          <img src={logolatest} alt="Logo" className="w-24 h-24 -mt-3" />
           <div className="md:hidden lg:block">
-            <h1 className="text-blue-400 -mx-2 mt-2 tracking-widest font-semibold">
+            {/* <h1 className="text-blue-400 -mx-2 mt-2 tracking-widest font-semibold">
               Empower<span className="text-blue-800">I</span> <br />
               Tech
-            </h1>
+            </h1> */}
           </div>
         </div>
 
         {/* Hamburger Menu for small screens */}
         <div className="hamburger md:hidden ml-auto p-4 cursor-pointer" onClick={handleToggleMenu}>
-          <div className="line h-0.5 w-6 my-1 bg-black"></div>
-          <div className="line h-0.5 w-6 my-1 bg-black"></div>
-          <div className="line h-0.5 w-6 my-1 bg-black"></div>
+          <div className="line h-0.5 w-6 my-1 bg-white"></div>
+          <div className="line h-0.5 w-6 my-1 bg-white"></div>
+          <div className="line h-0.5 w-6 my-1 bg-white"></div>
         </div>
 
         {/* Menu Overlay with Close Button */}
         {showMenu && (
-          <div className="fixed top-0 left-0 right-0 z-10 bg-white p-4 md:hidden overflow-auto" style={{ maxHeight: "100vh" }}>
+          <div className="fixed top-0 left-0 right-0 bottom-0 z-10 bg-slate-800 bg-opacity-40 p-4 md:hidden h-screen w-screen overflow-hidden"  >
             <div className="flex justify-end">
               {/* Close Button */}
-              <button onClick={handleToggleMenu} className="p-2">
-                <svg className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <button onClick={handleToggleMenu} className="p-2 mt-10">
+                <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
-            <div className="flex flex-col items-center space-y-4">
+            <div className="flex flex-col items-center bg-opacity-40  bg-slate-800 space-y-4 mb-4">
               {/* Navigation links for small screens */}
               <a href="/" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Home</a>
               <a href="/Team" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-semibold">Team</a>
@@ -79,8 +80,8 @@ const Navbar = () => {
             <Link to ="/Gallary" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Gallery</Link>
             <Link to ="/Services" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Services</Link>
             {/* <Link to ="/Volanteer" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Become Volunteer</Link> */}
-            <Link  to="/Help" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">About Us</Link>
-            <Link to="/Contact" className="hover:underline hover:underline-offset-8 hover:text-pink-500 cursor-pointer font-normal">Contact Us</Link>
+            <Link  to="/AboutUs" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-normal">About Us</Link>
+            <Link to="/Contact" className="hover:underline hover:underline-offset-8 hover:text-blue-500 cursor-pointer font-normal">Contact Us</Link>
         </div>
       </div>
     </div>

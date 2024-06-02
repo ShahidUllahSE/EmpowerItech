@@ -89,7 +89,7 @@ function Footer() {
                     <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
                   </svg>
                 </span>
-                TW Elements
+                EiT Elements
               </h6>
               <p>
                 Here you can use rows and columns to organize your footer
@@ -103,16 +103,16 @@ function Footer() {
                 Products
               </h6>
               <p className="mb-4">
-                <a href="#!">Angular</a>
+                <a href="#!">SEO</a>
               </p>
               <p className="mb-4">
-                <a href="#!">React</a>
+                <a href="#!">Ecommerce</a>
               </p>
               <p className="mb-4">
-                <a href="#!">Vue</a>
+                <a href="#!">Digital Marketing</a>
               </p>
               <p>
-                <a href="#!">Laravel</a>
+                <a href="#!">Web Development</a>
               </p>
             </div>
             {/* <!-- Useful links section --> */}
@@ -121,16 +121,16 @@ function Footer() {
                 Useful links
               </h6>
               <p className="mb-4">
-                <a href="#!">Pricing</a>
+                <a href="#!">Programs</a>
               </p>
               <p className="mb-4">
-                <a href="#!">Settings</a>
+                <a href="#!">Team</a>
               </p>
               <p className="mb-4">
-                <a href="#!">Orders</a>
+                <a href="#!">About EiT</a>
               </p>
               <p>
-                <a href="#!">Help</a>
+                <a href="#!">Contact Us</a>
               </p>
             </div>
             {/* <!-- Contact section --> */}

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import islamia2 from "../assets/islamia2.jpg";
 import img1 from "../assets/image1.jpg";
 import techheart from "../assets/techheart.jpg";
@@ -141,27 +142,21 @@ const Home = () => {
           <div className="flex flex-col items-center md:flex-row justify-center md:justify-start py-12 space-y-5">
             <div className="md:w-2/4">
             <h2 className="mb-4 text-center text-3xl font-bold">
-              About EmpowerITech
+              About Allied Skill
             </h2>
               <p className="text-lg text-justify mr-4 px-4 py-4 md:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                dolorem commodi repudiandae saepe magnam natus aspernatur enim
-                omnis praesentium ut, iure ipsam harum impedit ducimus placeat,
-                earum aliquid maiores rem! Et explicabo ea dolores deserunt
-                ratione architecto. Sapiente minima praesentium quisquam
-                incidunt culpa. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Culpa impedit maxime dolor, ullam sunt at id
-                dolores cumque, tenetur qui veniam molestias ut eveniet? Autem
-                dolores nobis obcaecati, error aspernatur saepe odit,
-                architecto, veniam similique sequi nihil asperiores earum fugiat
-                sit excepturi?
+              Welcome to our agency, where we are dedicated to helping you unlock your full potential in the world of freelancing and digital marketing. Whether you are a seasoned professional looking to refine your skills or a newcomer eager to dive into the dynamic gig economy, our academy offers the resources, training, and support you need to succeed on platforms like Fiverr and Upwork, as well as in the realm of guest posting.
               </p>
+              
+              <Link to="/AboutUs">
+              <button className="bg-blue-500 text-white p-2 rounded-md ml-4 hover:bg-blue-600">See more...</button>
+              </Link>
             </div>
             <img className="w-1/2 h-80 ml-7 " src={techheart} alt="" />
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className="w-full bg-gradient-to-tr from-purple-400 to-green-700 h-96 relative">
             <img
               src={bgtech}
@@ -174,7 +169,7 @@ const Home = () => {
               </h1>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="slider mt-4 flex-col-reverse md:flex-row bg-white">
           <div className="left flex flex-col  items-center md:items-baseline py-12  space-y-5">
@@ -183,16 +178,14 @@ const Home = () => {
             </h2>
             <p className="text-lg mr-6 text-justify px-4 md:text-xl ">
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              architecto cupiditate quos, laborum necessitatibus nisi,
-              blanditiis itaque at quia hic earum, et labore. Repellat corrupti
-              saepe eius, reiciendis suscipit nemo fugit obcaecati doloremque?
-              Obcaecati officia voluptate repellat odio accusantium. Ea, itaque.
-              Delectus at animi sapiente reprehenderit eum. Veniam beatae atque
-              cum cumque, totam quasi. Fugit totam debitis quaerat facilis
-              quidem incidunt quo rem, autem a quam alias error pariatur
-              tempora, suscipit sequi repellat aliquid sapiente nemo quod
-              doloribus perferendis neque!
+              Our Objective is to empower individuals and businesses to succeed in the digital marketplace by providing top-notch training, resources, and support. We are dedicated to helping freelancers thrive on platforms like Fiverr and Upwork, enhancing online visibility through guest posting, and equipping our students with the practical skills needed for a successful career in digital marketing.
+              </p>
+              <p className="text-lg mr-6 text-justify px-4 md:text-xl ">
+We believe in the transformative power of knowledge and the importance of personalized guidance. Our goal is to create a nurturing environment where everyone, regardless of their background or experience level, can learn, grow, and achieve their professional aspirations. By fostering a community of continuous learning and support, we aim to inspire and enable our clients and students to reach new heights in their freelancing and digital marketing journeys.
+</p>
+<p className="text-lg mr-6 text-justify px-4 md:text-xl ">
+In essence, our mission is to turn your dreams into reality by providing you with the tools, knowledge, and support to excel in the ever-evolving digital world.
+
             </p>
           </div>
         </div>
@@ -227,7 +220,7 @@ const Home = () => {
               </div>
 
               <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
-                <h3 className="mb-4 text-2xl font-bold">That's the news!</h3>
+                <h3 className="mb-4 text-2xl font-bold">Fiverr and Upwork Optimization</h3>
                 <div className="mb-4 flex items-center text-sm font-medium text-danger dark:text-danger-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -249,10 +242,8 @@ const Home = () => {
                   Published <u>14.01.2022</u> by
                   <a href="#!">Lisa McCartney</a>
                 </p>
-                <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                  Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                  placerat vulputate. Ut vulputate est non quam dignissim
-                  elementum. Donec a ullamcorper diam.
+                <p className="mb-6 text-neutral-600">
+                Our experts will help you create standout profiles and optimize your gigs to attract more clients. From writing compelling descriptions to selecting the right keywords, we ensure your profile gets noticed. 
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -389,21 +380,7 @@ const Home = () => {
       {/* </div> */}
       {/* </div> */}
 
-      {/* <div className="slider mt-4 flex-col-reverse md:flex-row bg-white">
-        <div className="left flex flex-col px-3 items-center  md:items-baseline py-5  space-y-5">
-          <p className="text-lg mr-6 text-justify px-4 md:text-xl ">
-            {" "}
-            This community welfare organisation operates with the purpose of
-            empowering women and advocating for their rights in Pakistan. It
-            tackles the challenges faced by women living in a deeply patriarchal
-            society and aims to bring about a positive change. By providing
-            financial support, spreading awareness through seminars and
-            conferences, and offering skill-enhancing workshops, we strive to
-            empower women in Pakistan to become independent, confident, and
-            influential members of society.
-          </p>
-        </div>
-      </div> */}
+      
     </div>
   );
 };
